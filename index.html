@@ -2,6 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="build/css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <title>RPG</title>
@@ -28,7 +29,27 @@
         </form>
       </div>
       <div class="character-info">
-
+        <div class="row">
+          <div class="col-md-4">
+            <h3>Your Character Info:</h3>
+            <p>Character Name: <span id="userName"> </span></p>
+            <p>Profession: <span id="userProfession"> </span></p>
+            <p>Level: <span id="userLevel"> </span></p>
+            <p>Health: <span id="userHealth"> </span></p>
+            <p>Lives: <span id="userLives"> </span></p>
+            <p>Items: <span id="userItems"> </span></p>
+          </div>
+          <div class="col-md-4">
+            <h3>Opponent Info:</h3>
+            <p>Character Name: <span id="opponentName"> </span></p>
+            <p>Profession: <span id="opponentProfession"> </span></p>
+            <p>Level: <span id="opponentLevel"> </span></p>
+            <p>Health: <span id="opponentHealth"> </span></p>
+            <p>Lives: <span id="opponentLives"> </span></p>
+            <p>Items: <span id="opponentItems"> </span></p>
+          </div>
+        </div>
+        <button class="btn-danger">FIGHT!</button>
       </div>
       <div class="battle">
 

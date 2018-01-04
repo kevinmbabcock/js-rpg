@@ -59,7 +59,24 @@ $(document).ready(function () {
       opponentProfession = "knight";
     }
     var opponent = new _character.Character("Opponent", opponentProfession);
-    console.log(opponent.profession);
+    $(".character-info").show();
+    $(".character-form").hide();
+    $("#userName").text(user.name);
+    $("#userProfession").text(user.profession);
+    $("#userLevel").text(user.level);
+    $("#userHealth").text(user.health);
+    $("#userLives").text(user.lives);
+    user.items.forEach(function (item) {
+      $("#userItems").append(item);
+    });
+    $("#opponentName").text(opponent.name);
+    $("#opponentProfession").text(opponent.profession);
+    $("#opponentLevel").text(opponent.level);
+    $("#opponentHealth").text(opponent.health);
+    $("#opponentLives").text(opponent.lives);
+    opponent.items.forEach(function (item) {
+      $("#opponentItems").append(item);
+    });
   });
 });
 
