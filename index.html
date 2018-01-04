@@ -4,11 +4,35 @@
     <link rel="stylesheet" href="build/css/vendor.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
-    <title></title>
+    <title>RPG</title>
   </head>
   <body>
     <div class="container">
-      
+      <h1 class="jumbotron">Role Player Game</h1>
+      <div class="character-form">
+        <form id="character-form">
+          <h2>Enter a name: </h2>
+          <div class="form-group">
+            <input type="text" class="form-control" id="name">
+          </div>
+          <h2>Select a profession:</h2>
+          <div class="form-group">
+            <select class="form-control" id="profession">
+              <option value="wizard"> wizard</option>
+              <option value="monster"> monster</option>
+              <option value="soldier"> soldier</option>
+              <option value="knight"> knight</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="character-info">
+
+      </div>
+      <div class="battle">
+
+      </div>
     </div>
   </body>
 </html>
